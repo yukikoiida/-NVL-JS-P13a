@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+
+        var num = 0;
+
+        function esPrimo(n){
+            var primos = new Array();
+            if (n<0){
+                alert("el número tiene que se superior a 0")
+            }
+            if(n>0){
+                var i=2;
+                while(i<=n){
+                    var c=2;
+                    var primo = true;
+                    while(primo&&c<i){
+                        if (i%c ==0){
+                            primo = false;
+                        }else{
+                            c++;
+                        }
+                    }
+                    if(primo){
+                        primos.push(i);
+                    }
+                    i++;
+                }
+            }
+           //alert(primos)
+        }
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
